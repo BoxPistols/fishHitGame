@@ -24,24 +24,29 @@ window.addEventListener('load', myFunc);
 window.addEventListener('resize', myFunc);
 // End
 
-var targetElement = document.getElementById( "target" ) ;
+var targetElement = document.getElementById("target");
 
-setInterval( function() {
-	var clientRect = targetElement.getBoundingClientRect() ;
+setInterval(function () {
+  var clientRect = targetElement.getBoundingClientRect();
 
-	// 画面内の位置
-	var x = clientRect.left ;
-	var y = clientRect.top ;
+  // 画面内の位置
+  var x = clientRect.left;
+  var y = clientRect.top;
 
-	// ページ内の位置
-	var px = window.pageXOffset + clientRect.left ;
-	var py = window.pageYOffset + clientRect.top ;
+  // ページ内の位置
+  var px = window.pageXOffset + clientRect.left;
+  var py = window.pageYOffset + clientRect.top;
 
-	// 表示
-	for ( var a=[ [ "x", x ], [ "y", y ], [ "px", px ], [ "py", py ] ],i=a.length; i--; ) {
-		document.getElementById( a[i][0] ).textContent = a[i][1] ;
-	}
-}, 100 ) ;
+  // 表示
+  for (var a = [
+      ["x", x],
+      ["y", y],
+      ["px", px],
+      ["py", py]
+    ], i = a.length; i--;) {
+    document.getElementById(a[i][0]).textContent = a[i][1];
+  }
+}, 100);
 /*
   Create Box
 */
@@ -60,30 +65,26 @@ for (let i = 0; i < 250; i++) {
     divBox.classList.add('circle');
 
 
-    if(divBox.textContent == 10){
+    if (divBox.textContent == 10 || divBox.textContent == 105 || divBox.textContent == 115 || divBox.textContent == 80 || divBox.textContent == 185 || divBox.textContent == 75) {
       divBox.textContent = 'あたり';
       divBox.style.background = 'crimson';
-
       // divBox.classList.add('hit');
-
       divBox.appendChild(hitBox);
-
       hitBox.classList.add('hitpal');
-
     };
 
-    if(divBox.textContent == 100){
-      divBox.textContent = 'あたり';
-      divBox.style.background = 'crimson';
-      divBox.classList.add('hit');
+    // if (divBox.textContent == 100) {
+    //   divBox.textContent = 'あたり';
+    //   divBox.style.background = 'crimson';
+    //   divBox.classList.add('hit');
 
-    };
+    // };
 
-    if(divBox.textContent == 200){
-      divBox.textContent = 'あたり';
-      divBox.style.background = 'crimson';
-      divBox.classList.add('hit');
-    };
+    // if (divBox.textContent == 200) {
+    //   divBox.textContent = 'あたり';
+    //   divBox.style.background = 'crimson';
+    //   divBox.classList.add('hit');
+    // };
 
   });
 

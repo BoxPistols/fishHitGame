@@ -13,8 +13,6 @@ if (window.addEventListener) {
 function create_obj() {
   var stalker = document.createElement("div");
 
-  // stalker.src="https://q-az.net/wp-content/uploads/stalke.png";
-  // stalker.alt="";
   stalker.style.position = "absolute";
   stalker.style.left = "0";
   stalker.style.top = "0";
@@ -30,7 +28,7 @@ function m_stalker_move(evt) {
     if (!evt.pageX) evt.pageX = evt.clientX + document.body.scrollLeft;
     if (!evt.pageY) evt.pageY = evt.clientY + document.body.scrollTop;
   }
-  stalker.style.left = evt.pageX - 15 + "px";
-  stalker.style.top = evt.pageY - 15 + "px";
+  stalker.style.left = evt.pageX - 25 + "px";
+  stalker.style.top = evt.pageY - 25 + "px";
 
 }
