@@ -1,0 +1,39 @@
+.timer,
+.over {
+  color: #fff;
+  position: fixed;
+  left: 10px;
+  top: 0px;
+  display: flex;
+  align-items: center;
+  font-size: 1.5em;
+}
+
+.over {
+  font-size: 5em;
+  top: 60px;
+}
+
+/* .restart {
+  padding: 2px 15px;
+  margin-left: 15px;
+  border: 1px solid #fff;
+  cursor: pointer;
+} */
+
+.bossArea {
+  position: fixed;
+  right: -150px;
+  top: 120%;
+  transition: 2s;
+  background-color: #fff;
+  display: block;
+  width: 150px;
+  height: 150px;
+}
+
+.bossArea.active {
+  right: 100px;
+  transform: rotate(360deg);
+  top: calc(50% - 100px);
+}
