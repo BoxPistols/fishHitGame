@@ -5,7 +5,7 @@ body {
 .wrap {
   animation: move;
   transition-timing-function: cubic-bezier(0.64, 0.18, 1, 1);
-  animation-duration: 60s;
+  animation-duration: 50s;
 
   padding: 30px;
   width: 600vw;
@@ -34,7 +34,7 @@ body {
   height: 120px;
   /* width: calc(100vh / 12 - (24px) ); */
   /* margin: 0; */
-  background: skyblue;
+  background: rgba(37, 86, 95, 0.4);
   opacity: 0.8;
   transition: 1s;
   cursor: pointer;
@@ -63,16 +63,24 @@ body {
 }
 
 /* +1の数字 */
+/* 当たり */
 .box:nth-child(11),
 .box:nth-child(106),
 .box:nth-child(116),
 .box:nth-child(81),
-.box:nth-child(186) {
+.box:nth-child(186),
+.box:nth-child(76) {
   background-color: #fff;
 }
 
+/* はずれ */
+.box:nth-child(111),
+.box:nth-child(71) {
+  background-color: yellow;
+}
+
 .circle {
-  background: pink;
+  background: rgba(240, 202, 209, 0.178);
   border-radius: 50%;
   transform: rotate(360deg);
 }

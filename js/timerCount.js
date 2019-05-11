@@ -1,5 +1,5 @@
 /// Timer
-var time = 35;
+var time = 30;
 
 $(function () {
   var sec = time;

@@ -73,12 +73,11 @@ for (let i = 0; i < 250; i++) {
       hitBox.classList.add('hitpal');
     };
 
-    // if (divBox.textContent == 100) {
-    //   divBox.textContent = 'あたり';
-    //   divBox.style.background = 'crimson';
-    //   divBox.classList.add('hit');
-
-    // };
+    if (divBox.textContent == 110 || divBox.textContent == 70) {
+      divBox.textContent = 'はずれ';
+      divBox.style.background = 'teal';
+      divBox.classList.add('lose');
+    };
 
     // if (divBox.textContent == 200) {
     //   divBox.textContent = 'あたり';
