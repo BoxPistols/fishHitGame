@@ -9,12 +9,13 @@ box.addEventListener('click', e => {
   box.classList.toggle('circle');
 */
 
-
-for (let i = 0; i < 340; i++) {
+for (let i = 1; i < 500; i++) {
 
   const divBox = document.createElement('div');
   divBox.classList.add('box');
 
+  const hitBox = document.createElement('div');
+  hitBox.classList.add('hit');
 
   divBox.textContent = i;
 
@@ -26,7 +27,13 @@ for (let i = 0; i < 340; i++) {
     if(divBox.textContent == 10){
       divBox.textContent = 'あたり';
       divBox.style.background = 'crimson';
-      divBox.classList.add('hit');
+
+      // divBox.classList.add('hit');
+
+      divBox.appendChild(hitBox);
+
+      hitBox.classList.add('hitpal');
+
     };
 
     if(divBox.textContent == 100){
@@ -46,5 +53,6 @@ for (let i = 0; i < 340; i++) {
 
   const wrap = document.querySelector('.wrap');
   wrap.appendChild(divBox);
+
 }
 // });
