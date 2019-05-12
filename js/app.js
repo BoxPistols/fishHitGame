@@ -78,6 +78,10 @@ for (let i = 0; i < 250; i++) {
       divBox.classList.add('lose');
     };
 
+    if (divBox.textContent == 59) {
+      divBox.classList.add('tako');
+    };
+
     // if (divBox.textContent == 200) {
     //   divBox.textContent = 'あたり';
     //   divBox.style.background = 'crimson';

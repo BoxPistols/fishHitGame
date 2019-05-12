@@ -64,19 +64,71 @@ body {
 .box:nth-child(76) {
   /* background-color: #fff; */
 
-  background: url(http://placeimg.com/240/240/any);
+  background: url(../img_k/Nakama2.png);
+  background-size: 100px;
+  background-repeat: no-repeat;
   width: 120px;
   height: 120px;
   background-position: center;
 
 }
 
-.box.hit {
-  /* display: block; */
-  background: url(http://placeimg.com/320/360/any);
+.box:nth-child(60) {
+  background: url(../img_k/Tako.png);
+  background-size: 100px;
+  background-repeat: no-repeat;
   width: 120px;
   height: 120px;
   background-position: center;
+}
+
+
+
+
+@keyframes up {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-100px);
+  }
+
+  100% {
+    transform: translateX(100px);
+  }
+}
+
+.box.hit {
+  /* display: block; */
+  background: url(../img_k/Nakama.png);
+  background-size: 100px;
+  background-repeat: no-repeat;
+  width: 120px;
+  height: 120px;
+  background-position: center;
+
+  animation-name: up;
+  animation-duration: 0.2s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+
+.box.tako {
+  /* background: url(../img_k/.png); */
+  background-size: 100px;
+  background-repeat: no-repeat;
+  width: 120px;
+  height: 120px;
+  background-position: center;
+
+  animation-name: up;
+  animation-duration: 0.2s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+
 }
 
 .hoverAction {
