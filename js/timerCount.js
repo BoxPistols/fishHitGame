@@ -42,7 +42,7 @@ $(function () {
         .add('active');
 
       $(wrap).fadeOut();
-
+      $('body').addClass('end');
       return;
     }
     // 0埋め

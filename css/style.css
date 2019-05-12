@@ -1,5 +1,6 @@
 body {
   background: darkblue;
+  background: linear-gradient(to bottom, blue 0%, darkblue 100%);
 }
 
 .wrap {
@@ -34,7 +35,7 @@ body {
   height: 120px;
   /* width: calc(100vh / 12 - (24px) ); */
   /* margin: 0; */
-  background: rgba(37, 86, 95, 0.4);
+  background: rgba(27, 186, 195, 0.6);
   opacity: 0.8;
   transition: 1s;
   cursor: pointer;
@@ -80,7 +81,8 @@ body {
 }
 
 .circle {
-  background: rgba(240, 202, 209, 0.178);
+  background: rgba(251, 167, 167, 0.75);
+  ;
   border-radius: 50%;
   transform: rotate(360deg);
 }
