@@ -23,22 +23,23 @@
 .box:nth-child(80),
 .box:nth-child(185),
 .box:nth-child(75) {
-  /* background-color: #fff; */
+  /* 文字サイズはゼロに */
+  font-size: 0;
   background: url(../img_k/Nakama2.png);
   background-size: 100px;
   background-repeat: no-repeat;
+  background-position: center;
   width: 120px;
   height: 120px;
-  background-position: center;
 }
 
 .box.hit {
   background: url(../img_k/Nakama.png);
   background-size: 100px;
   background-repeat: no-repeat;
+  background-position: center;
   width: 120px;
   height: 120px;
-  background-position: center;
   /* アニメーション keyframesの稼働命令 */
   animation-name: up;
   animation-duration: 0.2s;
@@ -53,6 +54,7 @@
 /* 59のマスにタコを置く　*/
 .box:nth-child(59) {
   background: url(../img_k/Tako.png);
+  font-size: 0;
   background-size: 100px;
   background-repeat: no-repeat;
   width: 120px;
@@ -61,7 +63,7 @@
 }
 
 /* 59のマスにをマウスオーバーしたらjsで.takoが追加され、
-  animation-name: up; のアニメが発動
+  animation-name: xxx ; のアニメが発動
 　*/
 .box.tako {
   /* background: url(../img_k/.png); */
@@ -93,8 +95,7 @@
   }
 }
 
-/
-/* はずれ */
+/* はずれ 今回なし？　*/
 /* .box:nth-child(111),
 .box:nth-child(71) {
   background-color: yellow;
