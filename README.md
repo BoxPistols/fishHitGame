@@ -7,6 +7,12 @@
 
 ```
 ├── README.md
+├── index.html
+└── js
+    ├── app.js
+    ├── charaAnime.js
+    ├── mouseStalker.js
+    └── timerCount.js
 ├── css
 │   ├── charaAnime.css
 │   ├── mousseStalker.css
@@ -45,10 +51,5 @@
 │   ├── tako.png
 │   ├── wakame.png
 │   └── yadokari.png
-├── index.html
-└── js
-    ├── app.js
-    ├── charaAnime.js
-    ├── mouseStalker.js
-    └── timerCount.js
+
 ```
