@@ -1,0 +1,101 @@
+.box {
+  width: 120px;
+  height: 120px;
+  background: rgba(27, 186, 195, 0.6);
+  opacity: 0.8;
+  transition: 1s;
+  cursor: pointer;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 何もない箇所のマウスオーバーの挙動 */
+.hoverAction {
+  background: pink;
+}
+
+/* 当たり */
+.box:nth-child(10),
+.box:nth-child(105),
+.box:nth-child(115),
+.box:nth-child(80),
+.box:nth-child(185),
+.box:nth-child(75) {
+  /* background-color: #fff; */
+  background: url(../img_k/Nakama2.png);
+  background-size: 100px;
+  background-repeat: no-repeat;
+  width: 120px;
+  height: 120px;
+  background-position: center;
+}
+
+.box.hit {
+  background: url(../img_k/Nakama.png);
+  background-size: 100px;
+  background-repeat: no-repeat;
+  width: 120px;
+  height: 120px;
+  background-position: center;
+  /* アニメーション keyframesの稼働命令 */
+  animation-name: up;
+  animation-duration: 0.2s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+
+/* -------------------------------------
+  キャラごとに追加していく箇所
+ --------------------------------------*/
+/* 59のマスにタコを置く　*/
+.box:nth-child(59) {
+  background: url(../img_k/Tako.png);
+  background-size: 100px;
+  background-repeat: no-repeat;
+  width: 120px;
+  height: 120px;
+  background-position: center;
+}
+
+/* 59のマスにをマウスオーバーしたらjsで.takoが追加され、
+  animation-name: up; のアニメが発動
+　*/
+.box.tako {
+  /* background: url(../img_k/.png); */
+  background-size: 100px;
+  background-repeat: no-repeat;
+  width: 120px;
+  height: 120px;
+  background-position: center;
+  /* アニメーション keyframesの稼働命令 */
+  animation-name: up;
+  animation-duration: 0.2s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+
+/* アニメーション内容、アニメの種類分だけ作成していく　*/
+@keyframes up {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-100px);
+  }
+
+  100% {
+    transform: translateX(100px);
+  }
+}
+
+/
+/* はずれ */
+/* .box:nth-child(111),
+.box:nth-child(71) {
+  background-color: yellow;
+} */

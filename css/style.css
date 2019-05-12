@@ -4,16 +4,13 @@ body {
 }
 
 .wrap {
-  animation: move;
+  /* animation: move; */
   transition-timing-function: cubic-bezier(0.64, 0.18, 1, 1);
   animation-duration: 50s;
-
   padding: 30px;
   width: 600vw;
   height: auto;
   max-height: 768px;
-  /* background-color: rgba(255, 255, 255, .2); */
-
   display: grid;
   grid-template: repeat(5, 120px) / repeat(50, 120px);
   grid-gap: 20px;
@@ -26,132 +23,7 @@ body {
   right: 20px;
 }
 
-.box {
-  /* float: left; */
-  /* width: 80px; */
-  /* height: calc(100vh / 10);
-  width: calc(100vh / 10); */
-  width: 120px;
-  height: 120px;
-  /* width: calc(100vh / 12 - (24px) ); */
-  /* margin: 0; */
-  background: rgba(27, 186, 195, 0.6);
-  opacity: 0.8;
-  transition: 1s;
-  cursor: pointer;
-  text-align: center;
-  /* line-height: 60px; */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* 
-.box.hit {
-  position: absolute;
-  left: 0;
-  top: 0;
-  z-index: 2;
-} */
-
-/* +1の数字 */
-/* 当たり */
-.box:nth-child(11),
-.box:nth-child(106),
-.box:nth-child(116),
-.box:nth-child(81),
-.box:nth-child(186),
-.box:nth-child(76) {
-  /* background-color: #fff; */
-
-  background: url(../img_k/Nakama2.png);
-  background-size: 100px;
-  background-repeat: no-repeat;
-  width: 120px;
-  height: 120px;
-  background-position: center;
-
-}
-
-.box:nth-child(60) {
-  background: url(../img_k/Tako.png);
-  background-size: 100px;
-  background-repeat: no-repeat;
-  width: 120px;
-  height: 120px;
-  background-position: center;
-}
-
-
-
-
-@keyframes up {
-  0% {
-    transform: translateY(0px);
-  }
-
-  50% {
-    transform: translateY(-100px);
-  }
-
-  100% {
-    transform: translateX(100px);
-  }
-}
-
-.box.hit {
-  /* display: block; */
-  background: url(../img_k/Nakama.png);
-  background-size: 100px;
-  background-repeat: no-repeat;
-  width: 120px;
-  height: 120px;
-  background-position: center;
-
-  animation-name: up;
-  animation-duration: 0.2s;
-  animation-timing-function: ease-out;
-  animation-iteration-count: infinite;
-  animation-direction: alternate-reverse;
-}
-
-.box.tako {
-  /* background: url(../img_k/.png); */
-  background-size: 100px;
-  background-repeat: no-repeat;
-  width: 120px;
-  height: 120px;
-  background-position: center;
-
-  animation-name: up;
-  animation-duration: 0.2s;
-  animation-timing-function: ease-out;
-  animation-iteration-count: infinite;
-  animation-direction: alternate-reverse;
-
-}
-
-.hoverAction {
-  background: pink;
-}
-
-.hit.hitpal {
-  height: 30px;
-  width: 30px;
-  background-color: teal;
-  position: absolute;
-  z-index: 2;
-  left: -6px;
-  bottom: -10px;
-}
-
-
-/* はずれ */
-.box:nth-child(111),
-.box:nth-child(71) {
-  background-color: yellow;
-}
-
+/* 背景のアニメ */
 @keyframes move {
   0% {
     margin-left: 50px;
