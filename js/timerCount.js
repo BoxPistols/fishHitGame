@@ -41,8 +41,8 @@ $(function () {
         .classList
         .add('active');
 
-      $(wrap).fadeOut();
-      $('body').addClass('end');
+      // $(wrap).fadeOut();
+      $('boy').addClass('end');
       return;
     }
     // 0埋め

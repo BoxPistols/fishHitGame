@@ -60,17 +60,16 @@ for (let i = 0; i < 250; i++) {
 
   divBox.textContent = i;
 
-
   divBox.addEventListener('mouseover', e => {
-    divBox.classList.add('circle');
+    divBox.classList.add('hoverAction');
 
 
     if (divBox.textContent == 10 || divBox.textContent == 105 || divBox.textContent == 115 || divBox.textContent == 80 || divBox.textContent == 185 || divBox.textContent == 75) {
       divBox.textContent = 'あたり';
-      divBox.style.background = 'crimson';
-      // divBox.classList.add('hit');
-      divBox.appendChild(hitBox);
-      hitBox.classList.add('hitpal');
+      // divBox.style.background = 'crimson';
+      divBox.classList.add('hit');
+      // divBox.appendChild(hitBox);
+      // hitBox.classList.add('hitpal');
     };
 
     if (divBox.textContent == 110 || divBox.textContent == 70) {
