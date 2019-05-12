@@ -5,6 +5,7 @@
 
 ## 現在の構成
 
+```
 ├── README.md
 ├── css
 │   ├── charaAnime.css
@@ -50,3 +51,4 @@
     ├── charaAnime.js
     ├── mouseStalker.js
     └── timerCount.js
+```
