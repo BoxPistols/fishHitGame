@@ -3,12 +3,13 @@
   height: 120px;
   background: rgba(27, 186, 195, 0.6);
   opacity: 0.8;
-  transition: 1s;
+  transition: .5s;
   cursor: pointer;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 1
 }
 
 /* 何もない箇所のマウスオーバーの挙動 */
@@ -46,6 +47,7 @@
   animation-timing-function: ease-out;
   animation-iteration-count: infinite;
   animation-direction: alternate-reverse;
+  z-index: 10;
 }
 
 /* -------------------------------------
@@ -74,10 +76,11 @@
   background-position: center;
   /* アニメーション keyframesの稼働命令 */
   animation-name: up;
-  animation-duration: 0.2s;
+  animation-duration: 0.5s;
   animation-timing-function: ease-out;
   animation-iteration-count: infinite;
   animation-direction: alternate-reverse;
+  z-index: 10;
 }
 
 /* アニメーション内容、アニメの種類分だけ作成していく　*/
@@ -87,11 +90,11 @@
   }
 
   50% {
-    transform: translateY(-100px);
+    transform: translateY(-20px);
   }
 
   100% {
-    transform: translateX(100px);
+    transform: translateX(20px);
   }
 }
 
