@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="ja">
 
 <head>
@@ -10,12 +10,25 @@
   <link rel="stylesheet" href="css/timeCounter.css">
   <link rel="stylesheet" href="css/mousseStalker.css">
   <link rel="stylesheet" href="css/charaAnime.css">
+
+  <style>
+    .timeToggle {
+      position: fixed;
+      right: 50%;
+      top: 1px;
+      color: #333;
+      background-color: yellow;
+      padding: 5px 10px;
+      border-radius: 10px;
+    }
+  </style>
 </head>
 
 <body>
 
   <div class="info">画面サイズ
-    <span class="wd"></span> /
+    <span class="wd"></span>
+    /
     <span class="wh"></span>
   </div>
 
@@ -26,6 +39,8 @@
   <div class="over"></div>
   <div class="bossArea"></div>
 
+  <div class="timeToggle">timeToggle</div>
+
   <div class="wrap"></div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -35,6 +50,18 @@
   <script src="js/timerCount.js"></script>
   <script src="js/charaAnime.js"></script>
 
+  <script>
+    $('.timeToggle').on('mouseover', function() {
+      let wrap = $(".wrap");
+      if (wrap.hasClass("stop")) {
+        wrap.css("animation", "move");
+        wrap.removeClass("stop");
+      } else {
+        wrap.css("animation", "none");
+        wrap.addClass("stop");
+      };
+    });
+  </script>
 </body>
 
 </html>
