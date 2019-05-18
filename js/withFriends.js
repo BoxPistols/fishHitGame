@@ -31,14 +31,14 @@ $(function() {
   };
 
   // ターゲットのオブジェクトの作成
-  $(".box").one("mouseenter", function(e) {
-    const item = document.createElement("div");
-    item.classList.add("item");
-    body.appendChild(item);
-    item.style.background = "crimson";
-    totalScore();
-    return;
-  });
+  // $(".box").one("mouseenter", function(e) {
+  //   const item = document.createElement("div");
+  //   item.classList.add("item");
+  //   body.appendChild(item);
+  //   item.style.background = "crimson";
+  //   totalScore();
+  //   return;
+  // });
 
   $(".box2").one("mouseenter", function(e) {
     const item2 = document.createElement("div");
@@ -80,7 +80,7 @@ $(function() {
   //   "mousemove",
   //   function(e) {
   //     const item = document.querySelector(".item");
-  //     item.style.position = "fixed";
+      item.style.position = "fixed";
   //     item.style.left = -20 + e.clientX + "px";
   //     item.style.top = 60 + e.clientY + "px";
   //   },
@@ -90,33 +90,56 @@ $(function() {
     "mousemove",
     function(e) {
       const item = document.querySelector(".tako");
-      item.style.position = "fixed";
+      // item.style.position = "fixed";
       item.style.left = -80 + e.clientX + "px";
       item.style.top = 20 + e.clientY + "px";
     },
     false
   );
 
-
   body.addEventListener(
     "mousemove",
     function(e) {
       const item2 = document.querySelector(".hit");
-
-      //要素取得
-      //
-      // //要素取得
-      // for(var i=0;i<obj.length;i++){
-      //   var a = obj[i].innerText;
-      //   console.log(a);
-      // }
-
       item2.style.position = "fixed";
       item2.style.left = -140 + e.clientX + "px";
       item2.style.top = -80 + e.clientY + "px";
     },
     false
   );
+  //要素取得
+  //
+  // //要素取得
+  // for(var i=0;i<obj.length;i++){
+  //   var a = obj[i].innerText;
+  //   console.log(a);
+  // }
+
+
+//////ADD
+
+body.addEventListener(
+  "mousemove",
+  function(e) {
+    const item = document.querySelector(".Nakama3");
+    // item.style.position = "fixed";
+    item.style.left = -80 + e.clientX + "px";
+    item.style.top = 20 + e.clientY + "px";
+  },
+  false
+);
+
+body.addEventListener(
+  "mousemove",
+  function(e) {
+    const item = document.querySelector(".Nakama4");
+    // item.style.position = "fixed";
+    item.style.left = -80 + e.clientX + "px";
+    item.style.top = 20 + e.clientY + "px";
+  },
+  false
+);
+
 
 
   body.addEventListener(

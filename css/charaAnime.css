@@ -4,21 +4,24 @@
   background-color: none;
   border: 1px solid rgba(27, 186, 195, 0.2);
   border-radius: 50%;
-  color: aquamarine;
+  color: #397984;
+  /* font-size: 20px; */
   /* opacity: 0.8; */
   transition: .5s;
   cursor: pointer;
   text-align: center;
+
   display: flex;
   justify-content: center;
   align-items: center;
+
   z-index: 1
 }
 
 /* 何もない箇所のマウスオーバーの挙動 */
 .hoverAction {
-  /* background: pink; */
-  background-color: none;
+  /* background: rgba(255, 200, 200, 0.9); */
+  /* background-color: none; */
 }
 
 /* 当たり */

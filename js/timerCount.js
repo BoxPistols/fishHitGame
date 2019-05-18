@@ -1,5 +1,5 @@
 /// Timer
-var time = 30;
+var time = 1;
 
 $(function () {
   var sec = time;
@@ -31,8 +31,9 @@ $(function () {
       sec -= 1;
     } else {
       console.log('stop!!');
-      over.innerHTML = '<span>Time over</span>';
+      // over.innerHTML = '<span>Time over</span>';
 
+      // over.innerHTML = '<span>Time over</span>　<br> <input type="button" value="もう１回あそぶ！" onclick="window.location.reload();" />'
       clearTimeout(timer);
 
       over

@@ -1,6 +1,10 @@
 body {
-  background: darkblue;
-  background: linear-gradient(to bottom, blue 0%, darkblue 100%);
+  background: linear-gradient(5deg, rgba(0, 139, 239, 0.2), rgba(225, 249, 255, 0.1)),url(../img/bg-ocean.png) center center / cover no-repeat;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  min-width: 100vw;
+  min-height: 100vh;
+  background-position: bottom;
 }
 
 .wrap {
