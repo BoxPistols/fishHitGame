@@ -64,6 +64,7 @@ $(function() {
     "mousemove",
     function(e) {
       const item = document.querySelector(".tako");
+      item.style.position = "fixed";
       item.style.left = -80 + e.clientX + "px";
       item.style.top = 20 + e.clientY + "px";
     },
@@ -87,9 +88,10 @@ $(function() {
 body.addEventListener(
   "mousemove",
   function(e) {
-    const item = document.querySelector(".Nakama3");
-    item.style.left = -80 + e.clientX + "px";
-    item.style.top = 20 + e.clientY + "px";
+    const item00 = document.querySelector(".Nakama3");
+    item00.style.position = "fixed";
+    item00.style.left = -80 + e.clientX + "px";
+    item00.style.top = 20 + e.clientY + "px";
   },
   false
 );
@@ -97,9 +99,10 @@ body.addEventListener(
 body.addEventListener(
   "mousemove",
   function(e) {
-    const item = document.querySelector(".Nakama4");
-    item.style.left = -80 + e.clientX + "px";
-    item.style.top = 20 + e.clientY + "px";
+    const item01 = document.querySelector(".Nakama4");
+    item01.style.position = "fixed";
+    item01.style.left = -80 + e.clientX + "px";
+    item01.style.top = 20 + e.clientY + "px";
   },
   false
 );
@@ -109,6 +112,7 @@ body.addEventListener(
     "mousemove",
     function(e) {
       const item3 = document.querySelector(".NakamaTsuppari");
+      item3.style.position = "fixed";
       item3.style.left = -60 + e.clientX + "px";
       item3.style.top = -80 + e.clientY + "px";
     },
@@ -138,40 +142,40 @@ body.addEventListener(
   body.addEventListener(
     "mousemove",
     function(e) {
-      const item5 = document.querySelector(".Fugu");
-      item5.style.position = "fixed";
-      item5.style.left = -60 + e.clientX + "px";
-      item5.style.top = -10 + e.clientY + "px";
+      const item6 = document.querySelector(".Fugu");
+      item6.style.position = "fixed";
+      item6.style.left = -60 + e.clientX + "px";
+      item6.style.top = -10 + e.clientY + "px";
     },
     false
   );
   body.addEventListener(
     "mousemove",
     function(e) {
-      const item5 = document.querySelector(".tako-y");
-      item5.style.position = "fixed";
-      item5.style.left = -60 + e.clientX + "px";
-      item5.style.top = -10 + e.clientY + "px";
+      const item7 = document.querySelector(".tako-y");
+      item7.style.position = "fixed";
+      item7.style.left = -60 + e.clientX + "px";
+      item7.style.top = -10 + e.clientY + "px";
     },
     false
   );
   body.addEventListener(
     "mousemove",
     function(e) {
-      const item5 = document.querySelector(".napo");
-      item5.style.position = "fixed";
-      item5.style.left = -60 + e.clientX + "px";
-      item5.style.top = -10 + e.clientY + "px";
+      const item8 = document.querySelector(".napo");
+      item8.style.position = "fixed";
+      item8.style.left = -60 + e.clientX + "px";
+      item8.style.top = -10 + e.clientY + "px";
     },
     false
   );
   body.addEventListener(
     "mousemove",
     function(e) {
-      const item5 = document.querySelector(".manboo");
-      item5.style.position = "fixed";
-      item5.style.left = -60 + e.clientX + "px";
-      item5.style.top = -10 + e.clientY + "px";
+      const item9 = document.querySelector(".manboo");
+      item9.style.position = "fixed";
+      item9.style.left = -60 + e.clientX + "px";
+      item9.style.top = -10 + e.clientY + "px";
     },
     false
   );
