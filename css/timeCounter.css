@@ -8,11 +8,23 @@
   display: flex;
   align-items: center;
   font-size: 1.5em;
+  transition: .3s;
 }
 
-.over {
-  font-size: 3em;
-  top: 60px;
+.over.active {
+  font-size: 5em;
+  white-space: nowrap;
+  /* top: 60px; */
+  z-index: 1;
+  color: crimson;
+  position: absolute;
+  left: calc(50% - 2.5em);
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  /* -webkit-transform: translate(-50%, -50%); */
+  transform: translate(0%, -10%);
+  opacity: .8;
 }
 
 /* .restart {
@@ -23,17 +35,24 @@
 } */
 .bossArea {
   position: fixed;
-  right: -250px;
-  top: 120%;
-  transition: 2s;
-  background-color: gray;
+  /* background-color: gray; */
+  background: url(../img_y/naporeonfish.png);
+  background-size: 800px;
+  background-repeat: no-repeat;
+  background-position: center;
   display: block;
-  width: 250px;
-  height: 250px;
+  width: 400px;
+  height: 400px;
+  right: -100%;
+
+  transform: rotate(80deg);
+  transition: 2s;
 }
 
 .bossArea.active {
-  right: 100px;
-  transform: rotate(360deg);
-  top: calc(50% - 100px);
+  right: -400px;
+  bottom: 0%;
+  transform: rotate(40deg);
+  width: 1000px;
+  height: 1000px;
 }

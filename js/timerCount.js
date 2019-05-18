@@ -32,6 +32,7 @@ $(function () {
     } else {
       console.log('stop!!');
       over.innerHTML = '<span>Time over</span>';
+
       clearTimeout(timer);
 
       over
