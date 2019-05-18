@@ -28,7 +28,7 @@ function m_stalker_move(evt) {
     if (!evt.pageX) evt.pageX = evt.clientX + document.body.scrollLeft;
     if (!evt.pageY) evt.pageY = evt.clientY + document.body.scrollTop;
   }
-  stalker.style.left = evt.pageX - 25 + "px";
-  stalker.style.top = evt.pageY - 25 + "px";
+  stalker.style.left = evt.pageX - 60 + "px";
+  stalker.style.top = evt.pageY - 60 + "px";
 
 }

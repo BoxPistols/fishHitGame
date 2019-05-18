@@ -10,18 +10,17 @@
   transition: .5s;
   cursor: pointer;
   text-align: center;
-
   display: flex;
   justify-content: center;
   align-items: center;
-
   z-index: 1
 }
 
-.box.hide{
+.box.hide {
   border: none;
   font-size: 0;
 }
+
 /* 何もない箇所のマウスオーバーの挙動 */
 .hoverAction {
   /* background: rgba(255, 200, 200, 0.9); */
@@ -496,4 +495,5 @@
     transform: rotateX(100deg) translate(30px, 150px);
   }
 }
+
 /* ====== コーチン End ＝＝＝＝＝ */

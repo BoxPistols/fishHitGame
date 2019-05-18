@@ -1,13 +1,13 @@
 /// Timer
-var time = 25;
+var time = 5;
 
-$(function () {
+$(function() {
   var sec = time;
 
   var timer;
 
   // スタート
-  $(function () {
+  $(function() {
     // 00:00:00から開始
     sec = time;
     $('#clock').html('Start!');
@@ -48,6 +48,10 @@ $(function () {
       $(notFriends).fadeOut(3000);
 
       $('bossArea').addClass('end');
+
+      // 結果
+      $('.win').addClass('show');
+
       return;
     }
     // 0埋め

@@ -15,20 +15,21 @@ $(function() {
     false
   );
 
-  // Score
-  const totalScore = () => {
-    const score = document.querySelector(".score").innerHTML;
-    const totalScore = parseInt(score);
-    document.querySelector(".score").innerHTML = totalScore + 100;
-    if (totalScore >= 500 - 100) {
-      youWin();
-    }
-  };
+  // // Score
+  // const totalScore = () => {
+  //   const score = document.querySelector(".score").innerHTML;
+  //   const totalScore = parseInt(score);
+  //   document.querySelector(".score").innerHTML = totalScore + 100;
+  //   if (totalScore >= 500 - 100) {
+  //     youWin();
+  //   }
+  // };
+  //
+  // const youWin = () => {
+  //   document.querySelector(".over").innerHTML = "You Win!";
+  //   $(".bossArea").addClass("youWin");
+  // };
 
-  const youWin = () => {
-    document.querySelector(".over").innerHTML = "You Win!";
-    $(".bossArea").addClass("youWin");
-  };
 
   // ターゲットのオブジェクトの作成
   // $(".box").one("mouseenter", function(e) {
@@ -85,31 +86,31 @@ $(function() {
   );
 
 
-//////ADD
+  //////ADD
 
-body.addEventListener(
-  "mousemove",
-  function(e) {
-    const item00 = document.querySelector(".Nakama3");
-    item00.style.position = "fixed";
-    item00.style.left = -80 + e.clientX + "px";
-    item00.style.top = 20 + e.clientY + "px";
-    item00.classList.add("getFriend");
-  },
-  false
-);
+  body.addEventListener(
+    "mousemove",
+    function(e) {
+      const item00 = document.querySelector(".Nakama3");
+      item00.style.position = "fixed";
+      item00.style.left = -80 + e.clientX + "px";
+      item00.style.top = 20 + e.clientY + "px";
+      item00.classList.add("getFriend");
+    },
+    false
+  );
 
-body.addEventListener(
-  "mousemove",
-  function(e) {
-    const item01 = document.querySelector(".Nakama4");
-    item01.style.position = "fixed";
-    item01.style.left = -80 + e.clientX + "px";
-    item01.style.top = 20 + e.clientY + "px";
-    item01.classList.add("getFriend");
-  },
-  false
-);
+  body.addEventListener(
+    "mousemove",
+    function(e) {
+      const item01 = document.querySelector(".Nakama4");
+      item01.style.position = "fixed";
+      item01.style.left = -80 + e.clientX + "px";
+      item01.style.top = 20 + e.clientY + "px";
+      item01.classList.add("getFriend");
+    },
+    false
+  );
 
 
   body.addEventListener(

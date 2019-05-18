@@ -11,6 +11,8 @@ const myFunc = () => {
   infoHeight.textContent = wh;
   // let wh = 768;
   // elem.style.height = wh + 'px';
+
+  $('.info').fadeOut(5000);
 }
 window.addEventListener('load', myFunc);
 window.addEventListener('resize', myFunc);

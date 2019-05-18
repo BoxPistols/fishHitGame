@@ -5,21 +5,18 @@
 }
 
 #m_stalker {
-  background-color:rgba(255,255,255, 0.2);
+  background-color: rgba(255, 255, 255, 0.2);
   background-image: url(../img/MainBlue.png);
   background-size: 150px;
   background-repeat: no-repeat;
   background-position: center;
   width: 130px;
   height: 130px;
-
   display: block;
   width: 140px;
   height: 140px;
   padding: 10px;
-
   border: 1px solid crimson;
-
   border-radius: 50%;
   transition: .1s;
   z-index: 10;

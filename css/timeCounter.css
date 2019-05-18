@@ -33,6 +33,41 @@
   border: 1px solid #fff;
   cursor: pointer;
 } */
+.win {
+  opacity: 0;
+  font-size: 0px;
+  transition: 1s;
+}
+
+.win.active {
+  color: orange;
+}
+
+.win.lose {
+  color: crimson;
+}
+
+/* last */
+.win.show {
+  opacity: 1;
+  font-size: 50px;
+  text-shadow: 2px 2px 2px #fff;
+  transition: 1s;
+  position: absolute;
+  left: 0;
+  top: 20px;
+  bottom: 0;
+  right: 0;
+  background: rgba(146, 217, 255, 0.51);
+  white-space: nowrap;
+  height: 210px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  z-index: 100;
+}
+
 .bossArea {
   position: fixed;
   /* background-color: gray; */
@@ -44,7 +79,6 @@
   width: 400px;
   height: 400px;
   right: -100%;
-
   transform: rotate(80deg);
   transition: 2s;
 }
