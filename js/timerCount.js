@@ -1,5 +1,5 @@
 /// Timer
-var time = 30;
+var time = 25;
 
 $(function () {
   var sec = time;
@@ -44,7 +44,10 @@ $(function () {
         .add('active');
 
       // $(wrap).fadeOut();
-      $('boy').addClass('end');
+      const notFriends = document.querySelectorAll('.box:not(.getFriend)');
+      $(notFriends).fadeOut(3000);
+
+      $('bossArea').addClass('end');
       return;
     }
     // 0埋め

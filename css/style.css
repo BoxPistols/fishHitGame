@@ -10,9 +10,9 @@ body {
 }
 
 .wrap {
-  /* animation: move; */
+  animation: move;
   transition-timing-function: cubic-bezier(0.64, 0.18, 1, 1);
-  animation-duration: 50s;
+  animation-duration: 36s;
   padding: 30px;
   width: 600vw;
   height: auto;
@@ -23,7 +23,7 @@ body {
 }
 
 .info {
-  color: white;
+  /* color: white; */
   position: absolute;
   top: 5px;
   right: 20px;

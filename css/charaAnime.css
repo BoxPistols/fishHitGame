@@ -18,6 +18,10 @@
   z-index: 1
 }
 
+.box.hide{
+  border: none;
+  font-size: 0;
+}
 /* 何もない箇所のマウスオーバーの挙動 */
 .hoverAction {
   /* background: rgba(255, 200, 200, 0.9); */
