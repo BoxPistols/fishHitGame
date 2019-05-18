@@ -27,7 +27,7 @@ $(function() {
 
   const youWin = () => {
     document.querySelector(".over").innerHTML = "You Win!";
-    $(".boss").addClass("show");
+    $(".bossArea").addClass("youWin");
   };
 
   // ターゲットのオブジェクトの作成
@@ -40,57 +40,30 @@ $(function() {
   //   return;
   // });
 
-  $(".box2").one("mouseenter", function(e) {
-    const item2 = document.createElement("div");
-    item2.classList.add("item2");
-    body.appendChild(item2);
-    item2.style.background = "teal";
-    totalScore();
-    return;
-  });
-
-  $(".box3").one("mouseenter", function(e) {
-    const item3 = document.createElement("div");
-    item3.classList.add("item3");
-    item3.style.background = "orange";
-    body.appendChild(item3);
-    totalScore();
-    return;
-  });
-
-  $(".box4").one("mouseenter", function(e) {
-    const item4 = document.createElement("div");
-    item4.classList.add("item4");
-    item4.style.background = "purple";
-    body.appendChild(item4);
-    totalScore();
-    return;
-  });
-  $(".box5").one("mouseenter", function(e) {
-    const item5 = document.createElement("div");
-    item5.classList.add("item5");
-    item5.style.background = "yellow";
-    body.appendChild(item5);
-    totalScore();
-    return;
-  });
-
   // ヒットしたらついてくるオブジェクトを生成、位置は目分量
   // body.addEventListener(
   //   "mousemove",
   //   function(e) {
   //     const item = document.querySelector(".item");
-      item.style.position = "fixed";
   //     item.style.left = -20 + e.clientX + "px";
   //     item.style.top = 60 + e.clientY + "px";
   //   },
   //   false
   // );
+
+  //要素取得
+  //
+  // //要素取得
+  // for(var i=0;i<obj.length;i++){
+  //   var a = obj[i].innerText;
+  //   console.log(a);
+  // }
+
+
   body.addEventListener(
     "mousemove",
     function(e) {
       const item = document.querySelector(".tako");
-      // item.style.position = "fixed";
       item.style.left = -80 + e.clientX + "px";
       item.style.top = 20 + e.clientY + "px";
     },
@@ -107,13 +80,6 @@ $(function() {
     },
     false
   );
-  //要素取得
-  //
-  // //要素取得
-  // for(var i=0;i<obj.length;i++){
-  //   var a = obj[i].innerText;
-  //   console.log(a);
-  // }
 
 
 //////ADD
@@ -122,7 +88,6 @@ body.addEventListener(
   "mousemove",
   function(e) {
     const item = document.querySelector(".Nakama3");
-    // item.style.position = "fixed";
     item.style.left = -80 + e.clientX + "px";
     item.style.top = 20 + e.clientY + "px";
   },
@@ -133,7 +98,6 @@ body.addEventListener(
   "mousemove",
   function(e) {
     const item = document.querySelector(".Nakama4");
-    // item.style.position = "fixed";
     item.style.left = -80 + e.clientX + "px";
     item.style.top = 20 + e.clientY + "px";
   },
@@ -141,21 +105,20 @@ body.addEventListener(
 );
 
 
-
   body.addEventListener(
     "mousemove",
     function(e) {
-      const item3 = document.querySelector(".item3");
-      item3.style.position = "fixed";
+      const item3 = document.querySelector(".NakamaTsuppari");
       item3.style.left = -60 + e.clientX + "px";
       item3.style.top = -80 + e.clientY + "px";
     },
     false
   );
+
   body.addEventListener(
     "mousemove",
     function(e) {
-      const item4 = document.querySelector(".item4");
+      const item4 = document.querySelector(".NakamaUkiwa");
       item4.style.position = "fixed";
       item4.style.left = 20 + e.clientX + "px";
       item4.style.top = -60 + e.clientY + "px";
@@ -165,7 +128,47 @@ body.addEventListener(
   body.addEventListener(
     "mousemove",
     function(e) {
-      const item5 = document.querySelector(".item5");
+      const item5 = document.querySelector(".NakamaUkiwa2-1");
+      item5.style.position = "fixed";
+      item5.style.left = -60 + e.clientX + "px";
+      item5.style.top = -10 + e.clientY + "px";
+    },
+    false
+  );
+  body.addEventListener(
+    "mousemove",
+    function(e) {
+      const item5 = document.querySelector(".Fugu");
+      item5.style.position = "fixed";
+      item5.style.left = -60 + e.clientX + "px";
+      item5.style.top = -10 + e.clientY + "px";
+    },
+    false
+  );
+  body.addEventListener(
+    "mousemove",
+    function(e) {
+      const item5 = document.querySelector(".tako-y");
+      item5.style.position = "fixed";
+      item5.style.left = -60 + e.clientX + "px";
+      item5.style.top = -10 + e.clientY + "px";
+    },
+    false
+  );
+  body.addEventListener(
+    "mousemove",
+    function(e) {
+      const item5 = document.querySelector(".napo");
+      item5.style.position = "fixed";
+      item5.style.left = -60 + e.clientX + "px";
+      item5.style.top = -10 + e.clientY + "px";
+    },
+    false
+  );
+  body.addEventListener(
+    "mousemove",
+    function(e) {
+      const item5 = document.querySelector(".manboo");
       item5.style.position = "fixed";
       item5.style.left = -60 + e.clientX + "px";
       item5.style.top = -10 + e.clientY + "px";

@@ -1,14 +1,14 @@
 .timer,
 .over {
-  color: floralwhite;
+  color: #333;
   position: absolute;
   left: 2%;
   top: 2%;
-  /* transform: translate(-50%, -50%) */
   display: flex;
   align-items: center;
-  font-size: 1.5em;
+  font-size: 2em;
   transition: .3s;
+  z-index: 10;
 }
 
 .over.active {
