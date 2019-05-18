@@ -5,7 +5,15 @@
 }
 
 #m_stalker {
-  background: crimson;
+  /* background: crimson; */
+
+  background: url(../img/MainBlue.png);
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 160px;
+  height: 160px;
+
   display: block;
   width: 80px;
   height: 80px;

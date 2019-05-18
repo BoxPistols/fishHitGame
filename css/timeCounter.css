@@ -1,16 +1,17 @@
 .timer,
 .over {
-  color: #fff;
-  position: fixed;
-  left: 10px;
-  top: 0px;
+  color: floralwhite;
+  position: absolute;
+  left: 2%;
+  top: 2%;
+  /* transform: translate(-50%, -50%) */
   display: flex;
   align-items: center;
   font-size: 1.5em;
 }
 
 .over {
-  font-size: 5em;
+  font-size: 3em;
   top: 60px;
 }
 
@@ -20,16 +21,15 @@
   border: 1px solid #fff;
   cursor: pointer;
 } */
-
 .bossArea {
   position: fixed;
-  right: -150px;
+  right: -250px;
   top: 120%;
   transition: 2s;
-  background-color: #fff;
+  background-color: gray;
   display: block;
-  width: 150px;
-  height: 150px;
+  width: 250px;
+  height: 250px;
 }
 
 .bossArea.active {
