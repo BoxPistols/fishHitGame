@@ -4,6 +4,10 @@
 //   console.log("monnge");
 // }
 
+let score = document.querySelector(".score").innerHTML;
+let totalScore = parseInt(score);
+
+
 /*
   Create Box
 */
@@ -39,7 +43,7 @@ for (let i = 1; i < 250; i++) {
      --------------------------------------*/
     // TODO： ポイント相談
     let totalScore = () => {
-      const score = document.querySelector(".score").innerHTML;
+      let score = document.querySelector(".score").innerHTML;
       let totalScore = parseInt(score);
       document.querySelector(".score").innerHTML = totalScore + 1;
       if (totalScore >= 10) {

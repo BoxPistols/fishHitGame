@@ -133,6 +133,130 @@ document.addEventListener("DOMContentLoaded", function(event) {
     },
     false
   );
+  body.addEventListener(
+    "mousemove",
+    function(e) {
+      const item10 = document.querySelector(".kuragek");
+      item10.style.position = "fixed";
+      item10.style.left = 40 + e.clientX + "px";
+      item10.style.top = -30 + e.clientY + "px";
+      item10.classList.add("getFriend");
+    },
+    false
+  );
+  body.addEventListener(
+    "mousemove",
+    function(e) {
+      const item11 = document.querySelector(".takok");
+      item11.style.position = "fixed";
+      item11.style.left = 60 + e.clientX + "px";
+      item11.style.top = -40 + e.clientY + "px";
+      item11.classList.add("getFriend");
+    },
+    false
+  );
+  body.addEventListener(
+    "mousemove",
+    function(e) {
+      const item12 = document.querySelector(".nakama_d");
+      item12.style.position = "fixed";
+      item12.style.left = 70 + e.clientX + "px";
+      item12.style.top = -50 + e.clientY + "px";
+      item12.classList.add("getFriend");
+    },
+    false
+  );
+  body.addEventListener(
+    "mousemove",
+    function(e) {
+      const item13 = document.querySelector(".nakama_m");
+      item13.style.position = "fixed";
+      item13.style.left = 10 + e.clientX + "px";
+      item13.style.top = -20 + e.clientY + "px";
+      item13.classList.add("getFriend");
+    },
+    false
+  );
+  body.addEventListener(
+    "mousemove",
+    function(e) {
+      const item14 = document.querySelector(".nakama_n");
+      item14.style.position = "fixed";
+      item14.style.left = -30 + e.clientX + "px";
+      item14.style.top = -30 + e.clientY + "px";
+      item14.classList.add("getFriend");
+    },
+    false
+  );
+  body.addEventListener(
+    "mousemove",
+    function(e) {
+      const item15 = document.querySelector(".kuragey");
+      item15.style.position = "fixed";
+      item15.style.left = 30 + e.clientX + "px";
+      item15.style.top = 20 + e.clientY + "px";
+      item15.classList.add("getFriend");
+    },
+    false
+  );
+  body.addEventListener(
+    "mousemove",
+    function(e) {
+      const item16 = document.querySelector(".nakama_tsup");
+      item16.style.position = "fixed";
+      item16.style.left = 20 + e.clientX + "px";
+      item16.style.top = -30 + e.clientY + "px";
+      item16.classList.add("getFriend");
+    },
+    false
+  );
+  body.addEventListener(
+    "mousemove",
+    function(e) {
+      const item17 = document.querySelector(".nakama_tono");
+      item17.style.position = "fixed";
+      item17.style.left = 30 + e.clientX + "px";
+      item17.style.top = -40 + e.clientY + "px";
+      item17.classList.add("getFriend");
+    },
+    false
+  );
+  body.addeventlistener(
+    "mousemove",
+    function(e) {
+      const item18 = document.querySelector(".nakama2");
+      item18.style.position = "fixed";
+      item18.style.left = 35 + e.clientX + "px";
+      item18.style.top = -32 + e.clientY + "px";
+      item18.classList.add("getFriend");
+    },
+    false
+  );
+  body.addeventlistener(
+    "mousemove",
+    function(e) {
+      const item19 = document.querySelector(".nakama3");
+      item19.style.position = "fixed";
+      item19.style.left = -38 + e.clientX + "px";
+      item19.style.top = 32 + e.clientY + "px";
+      item19.classList.add("getFriend");
+    },
+    false
+  );
 
+
+
+/*
+    kuragek
+    takok
+    nakama_d
+    nakama_m
+    nakama_n
+    kuragey
+    nakama_tsup
+    nakama_tono
+    nakama2
+    nakama3
+*/
 
 });

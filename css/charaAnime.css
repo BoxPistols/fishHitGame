@@ -5,7 +5,7 @@
   border: 1px solid rgba(27, 186, 195, 0.2);
   border-radius: 50%;
   color: #397984;
-  /* font-size: 20px; */
+  font-size: 0px;
   /* opacity: 0.8; */
   transition: .5s;
   cursor: pointer;
