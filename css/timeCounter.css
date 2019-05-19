@@ -55,7 +55,7 @@
   transition: 1s;
   position: absolute;
   left: 0;
-  top: 10px;
+  top: 15%;
   bottom: 0;
   right: 0;
   background: rgba(146, 217, 255, 0.51);
@@ -67,11 +67,12 @@
   align-items: center;
   width: 100%;
   z-index: 100;
+  max-width: 80%;
+  border-radius: 50%;
 }
 
-.bossArea {
+/* .bossArea {
   position: fixed;
-  /* background-color: gray; */
   background: url(../img_y/naporeonfish.png);
   background-size: 800px;
   background-repeat: no-repeat;
@@ -90,4 +91,128 @@
   transform: rotate(40deg);
   width: 1000px;
   height: 1000px;
+}
+*/
+.bossArea {
+  position: fixed;
+  /* background-color: gray; */
+  background: url(../img_y/megamouse.png);
+  background-size: 800px;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: block;
+  width: 400px;
+  height: 400px;
+  right: -100%;
+  transition: 2s;
+}
+
+.bossArea.active {
+  right: -200px;
+  bottom: 0%;
+  transform: rotate(40deg);
+  width: 1000px;
+  height: 1000px;
+  /* 挿入した幸地アニメーション */
+  animation-name: boss;
+  animation-duration: 15s;
+  animation-timing-function: ease;
+  /*アニメーションさせるイージング*/
+  /*    animation-delay:0.5s; アニメーション開始させる時間*/
+  animation-iteration-count: none;
+  /*繰り返し回数*/
+  animation-direction: normal;
+  /*往復処理をどうするか*/
+  animation-fill-mode: forwards;
+  /*アニメーション後のスタイルをどうするか*/
+}
+
+@keyframes boss {
+
+  /*最初のセリフ、ゆらゆら*/
+  0% {
+    transform: translate(-10px, -10px);
+  }
+
+  3% {
+    transform: translate(0px, 0px) scale(1.4)
+  }
+
+  5% {
+    transform: translate(-10px, -10px) scale(1);
+  }
+
+  7% {
+    transform: translate(0px, 5px) scale(1.2);
+  }
+
+  10% {
+    transform: translate(-10px, -10px) scale(1);
+  }
+
+  20% {
+    transform: translate(0px, 0px)
+  }
+
+  /*次のセリフ、驚きの小刻み*/
+  51% {
+    transform: rotate(-8deg)
+  }
+
+  51.2% {
+    transform: rotate(15deg)
+  }
+
+  51.5% {
+    transform: rotate(-18deg)
+  }
+
+  51.7% {
+    transform: rotate(18deg)
+  }
+
+  52% {
+    transform: rotate(-22deg)
+  }
+
+  52.2% {
+    transform: rotate(22deg)
+  }
+
+  52.4% {
+    transform: rotate(-18deg)
+  }
+
+  52.6% {
+    transform: rotate(18deg)
+  }
+
+  52.8% {
+    transform: rotate(-12deg)
+  }
+
+  53% {
+    transform: rotate(12deg)
+  }
+
+  53.2% {
+    transform: rotate(0deg)
+  }
+
+  55% {
+    transform: rotate(0deg)
+  }
+
+  /* 帰ってもらう動き*/
+  60% {
+    transform: translateX(200px)
+  }
+
+  80% {
+    transform: translateX(200px)
+  }
+
+  100% {
+    transform: translateX(1000px) scale(0.7)
+  }
 }

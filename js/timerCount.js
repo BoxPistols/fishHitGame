@@ -1,6 +1,6 @@
 /// Timer
 // 40
-var time = 44;
+var time = 18;
 
 $(function() {
   var sec = time;
