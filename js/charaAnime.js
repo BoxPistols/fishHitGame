@@ -131,38 +131,28 @@ for (let i = 1; i < 250; i++) {
     /* ====== コーチン End ＝＝＝＝＝ */
 
 
-
-
     /* -------------------------------------
-         キャラごとに追加していく箇所 あさダッチバージョン！！
-        --------------------------------------*/
+     キャラごとに追加していく箇所 あさダッチバージョン！！
+    --------------------------------------*/
     //下段　海底
     if (divBox.textContent == 201 || divBox.textContent == 210 || divBox.textContent == 219 || divBox.textContent == 232 || divBox.textContent == 249) {
       divBox.textContent = '';
       divBox.classList.add('wakame');
-      totalScore();
-      return;
     };
 
     if (divBox.textContent == 202 || divBox.textContent == 212 || divBox.textContent == 223 || divBox.textContent == 236) {
       divBox.textContent = '';
       divBox.classList.add('sango');
-      totalScore();
-      return;
     };
 
     if (divBox.textContent == 204 || divBox.textContent == 214 || divBox.textContent == 225 || divBox.textContent == 238) {
       divBox.textContent = '';
       divBox.classList.add('shell');
-      totalScore();
-      return;
     };
 
     if (divBox.textContent == 208 || divBox.textContent == 217 || divBox.textContent == 228 || divBox.textContent == 246 || divBox.textContent == 250) {
       divBox.textContent = '';
       divBox.classList.add('hitode');
-      totalScore();
-      return;
     };
 
 
@@ -170,50 +160,36 @@ for (let i = 1; i < 250; i++) {
     if (divBox.textContent == 203 || divBox.textContent == 172 || divBox.textContent == 192) {
       divBox.textContent = '';
       divBox.classList.add('yadokari');
-      totalScore();
-      return;
     };
 
     if (divBox.textContent == 154 || divBox.textContent == 176 || divBox.textContent == 198) {
       divBox.textContent = '';
       divBox.classList.add('umiusi_w');
-      totalScore();
-      return;
     };
 
     if (divBox.textContent == 156 || divBox.textContent == 179) {
       divBox.textContent = '';
       divBox.classList.add('kaniy');
-      totalScore();
-      return;
     };
 
     if (divBox.textContent == 158 || divBox.textContent == 183 || divBox.textContent == 194) {
       divBox.textContent = '';
       divBox.classList.add('ebi');
-      totalScore();
-      return;
     };
 
     if (divBox.textContent == 163 || divBox.textContent == 185) {
       divBox.textContent = '';
       divBox.classList.add('umiusi_p');
-      totalScore();
-      return;
     };
 
     if (divBox.textContent == 165 || divBox.textContent == 188) {
       divBox.textContent = '';
       divBox.classList.add('umiusi_p');
-      totalScore();
-      return;
     };
 
     if (divBox.textContent == 170 || divBox.textContent == 190 || divBox.textContent == 200) {
       divBox.textContent = '';
       divBox.classList.add('kanik');
-      totalScore();
-      return;
     };
 
 
@@ -221,140 +197,93 @@ for (let i = 1; i < 250; i++) {
     if (divBox.textContent == 105 || divBox.textContent == 130) {
       divBox.textContent = '';
       divBox.classList.add('fugu');
-      totalScore();
-      return;
     };
 
     if (divBox.textContent == 109 || divBox.textContent == 135) {
       divBox.textContent = '';
       divBox.classList.add('kuragek');
-      totalScore();
-      return;
     };
 
     if (divBox.textContent == 111 || divBox.textContent == 139) {
       divBox.textContent = '';
       divBox.classList.add('takok');
-      totalScore();
-      return;
     };
 
     if (divBox.textContent == 115 || divBox.textContent == 141) {
       divBox.textContent = '';
       divBox.classList.add('nakama_d');
-      totalScore();
-      return;
     };
 
     if (divBox.textContent == 119 || divBox.textContent == 142) {
       divBox.textContent = '';
       divBox.classList.add('nakama_m');
-      totalScore();
-      return;
     };
 
     if (divBox.textContent == 122 || divBox.textContent == 146) {
       divBox.textContent = '';
       divBox.classList.add('nakama_n');
-      totalScore();
-      return;
     };
 
     if (divBox.textContent == 128) {
       divBox.textContent = '';
       divBox.classList.add('kuragey');
-      totalScore();
-      return;
     };
 
     //上から　二段目
     if (divBox.textContent == 52 || divBox.textContent == 68 || divBox.textContent == 86) {
       divBox.textContent = '';
       divBox.classList.add('nakama_tono');
-      totalScore();
-      return;
     };
     if (divBox.textContent == 54 || divBox.textContent == 71 || divBox.textContent == 90) {
       divBox.textContent = '';
       divBox.classList.add('nakama_tsup');
-      totalScore();
-      return;
     };
     if (divBox.textContent == 57 || divBox.textContent == 73 || divBox.textContent == 93) {
       divBox.textContent = '';
       divBox.classList.add('kinme');
-      totalScore();
-      return;
     };
     if (divBox.textContent == 62 || divBox.textContent == 75 || divBox.textContent == 99) {
       divBox.textContent = 'nakama2';
       divBox.classList.add('');
-      totalScore();
-      return;
     };
     if (divBox.textContent == 64 || divBox.textContent == 77) {
       divBox.textContent = '';
-      divBox.classList.add('nakama2');
-      totalScore();
-      return;
+      divBox.classList.add('nakama3');
     };
     if (divBox.textContent == 67 || divBox.textContent == 82) {
       divBox.textContent = '';
       divBox.classList.add('takoy');
-      totalScore();
-      return;
     };
 
     //上一番上
-    if (divBox.textContent == 3 || divBox.textContent == 5 || divBox.textContent == 37) {
+    if (divBox.textContent == 3 || divBox.textContent == 25 || divBox.textContent == 37) {
       divBox.textContent = '';
       divBox.classList.add('kurage2');
-      totalScore();
-      return;
     };
-    if (divBox.textContent == 5 || divBox.textContent == 9 || divBox.textContent == 45) {
+    if (divBox.textContent == 5 || divBox.textContent == 34 || divBox.textContent == 45) {
       divBox.textContent = '';
       divBox.classList.add('bigfish');
-      totalScore();
-      return;
     };
-    if (divBox.textContent == 9 || divBox.textContent == 12 || divBox.textContent == 48) {
+    if (divBox.textContent == 9 || divBox.textContent == 48) {
       divBox.textContent = '';
       divBox.classList.add('nakama1');
-      totalScore();
-      return;
     };
-    if (divBox.textContent == 12 || divBox.textContent == 16 || divBox.textContent == 50) {
+    if (divBox.textContent == 12 || divBox.textContent == 25 || divBox.textContent == 50) {
       divBox.textContent = '';
       divBox.classList.add('nakama_ukiwa');
-      totalScore();
-      return;
     };
-    if (divBox.textContent == 16 || divBox.textContent == 25 || divBox.textContent == 41) {
+    if (divBox.textContent == 41 || divBox.textContent == 16) {
       divBox.textContent = '';
       divBox.classList.add('ankou');
-      totalScore();
-      return;
     };
-    if (divBox.textContent == 25 || divBox.textContent == 30) {
-      divBox.textContent = '';
-      divBox.classList.add('nakama4');
-      totalScore();
-      return;
-    };
-    if (divBox.textContent == 30 || divBox.textContent == 34) {
+    if (divBox.textContent == 30 || divBox.textContent == 9) {
       divBox.textContent = '';
       divBox.classList.add('manboo');
-      totalScore();
-      return;
     };
 
     if (divBox.textContent == 59) {
       divBox.classList.add('bigika');
-      totalScore();
-      return;
     };
-
 
     /* ====== あさダッチバージョン End ＝＝＝＝＝ */
   });
