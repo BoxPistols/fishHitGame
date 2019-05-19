@@ -1,5 +1,6 @@
 /// Timer
-var time = 40;
+// 40
+var time = 5;
 
 $(function() {
   var sec = time;
@@ -47,10 +48,28 @@ $(function() {
       const notFriends = document.querySelectorAll('.box:not(.getFriend)');
       $(notFriends).fadeOut(3000);
 
-      $('bossArea').addClass('end');
+      // $('bossArea').addClass('end');
 
       // 結果
       $('.win').addClass('show');
+
+      // //  仕込み　NG
+      // let beforeScore = 0;
+      // document.querySelector(".score").innerHTML = beforeScore;
+      // // console.log(beforeScore);
+      //
+      // if (beforeScore = "0" ) {
+      //   console.log("loseZero");
+      //   // alert("0");
+      //   document.querySelector(".win").innerHTML = "え？わたしの年収低すぎ！？";
+      //   $(".win").addClass("lose").removeClass("active");
+      //   $('bossArea').addClass('boss-is-Win');
+      //
+      // } else {
+      //   console.log("Other");
+      //   alert("other");
+      // }
+      //
 
       return;
     }

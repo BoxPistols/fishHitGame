@@ -12,7 +12,7 @@ body {
 }
 
 .wrap {
-  animation: move;
+  /* animation: move; */
   transition-timing-function: cubic-bezier(0.64, 0.18, 1, 1);
   animation-duration: 50s;
   padding: 30px;

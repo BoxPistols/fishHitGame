@@ -1,3 +1,9 @@
+// const hohee = document.querySelector(".score");
+// console.log(hohee.innerHTML);
+// if (hohee = "0") {
+//   console.log("monnge");
+// }
+
 /*
   Create Box
 */
@@ -11,6 +17,7 @@ for (let i = 1; i < 250; i++) {
 
   divBox.textContent = i;
 
+
   divBox.addEventListener('mouseover', e => {
 
     // マウスオーバーした時の基本の挙動
@@ -21,28 +28,23 @@ for (let i = 1; i < 250; i++) {
       divBox.textContent = '';
       divBox.classList.add('hit');
     };
-
     // if (divBox.textContent == 110 || divBox.textContent == 70) {
     //   divBox.textContent = '';
     //   divBox.style.background = 'teal';
     //   divBox.classList.add('lose');
     // };
 
-
-
     /* -------------------------------------
       スコア設定
      --------------------------------------*/
     // TODO： ポイント相談
-    const totalScore = () => {
+    let totalScore = () => {
       const score = document.querySelector(".score").innerHTML;
-      const totalScore = parseInt(score);
+      let totalScore = parseInt(score);
       document.querySelector(".score").innerHTML = totalScore + 1;
       if (totalScore >= 10) {
         youWin();
-        // console.log(totalScore);
-        // console.log("Win!");
-      } else{
+      } else {
         youLose();
       }
       console.log(totalScore);
@@ -51,11 +53,15 @@ for (let i = 1; i < 250; i++) {
     const youWin = () => {
       document.querySelector(".win").innerHTML = "なかまがたくさんできたっ！<br>こわくないぞ！";
       $(".win").addClass("active").removeClass("lose");
+      const bossArea = document.querySelector(".bossArea");
+      bossArea.classList.add('boss-is-Lose');
     };
 
     const youLose = () => {
       document.querySelector(".win").innerHTML = "え？わたしの年収低すぎ！？";
       $(".win").addClass("lose").removeClass("active");
+      const bossArea = document.querySelector(".bossArea");
+      bossArea.classList.add('boss-is-Win');
     };
 
     /* -------------------------------------
