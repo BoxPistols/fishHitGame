@@ -55,6 +55,7 @@ for (let i = 1; i < 250; i++) {
       $(".win").addClass("active").removeClass("lose");
       const bossArea = document.querySelector(".bossArea");
       bossArea.classList.add('boss-is-Lose');
+      bossArea.classList.remove('boss-is-Win');
     };
 
     const youLose = () => {
@@ -62,6 +63,7 @@ for (let i = 1; i < 250; i++) {
       $(".win").addClass("lose").removeClass("active");
       const bossArea = document.querySelector(".bossArea");
       bossArea.classList.add('boss-is-Win');
+      bossArea.classList.remove('boss-is-Lose');
     };
 
     /* -------------------------------------
