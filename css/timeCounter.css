@@ -55,12 +55,13 @@
   transition: 1s;
   position: absolute;
   left: 0;
-  top: 20px;
+  top: 10px;
   bottom: 0;
   right: 0;
   background: rgba(146, 217, 255, 0.51);
   white-space: nowrap;
-  height: 210px;
+  height: auto;
+  max-height: 280px;
   display: flex;
   justify-content: center;
   align-items: center;

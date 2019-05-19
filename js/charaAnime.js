@@ -51,7 +51,7 @@ for (let i = 1; i < 250; i++) {
     };
 
     const youWin = () => {
-      document.querySelector(".win").innerHTML = "なかまがたくさんできたっ！<br>こわくないぞ！";
+      document.querySelector(".win").innerHTML = "<p><span>なかまがたくさんできたっ！<br>こわくないぞ！</span></p>";
       $(".win").addClass("active").removeClass("lose");
       const bossArea = document.querySelector(".bossArea");
       bossArea.classList.add('boss-is-Lose');
@@ -59,7 +59,7 @@ for (let i = 1; i < 250; i++) {
     };
 
     const youLose = () => {
-      document.querySelector(".win").innerHTML = "え？わたしの年収低すぎ！？";
+      document.querySelector(".win").innerHTML = "<p><span>え？わたしのねんしゅうひくすぎ！？</span></p>";
       $(".win").addClass("lose").removeClass("active");
       const bossArea = document.querySelector(".bossArea");
       bossArea.classList.add('boss-is-Win');

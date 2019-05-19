@@ -5,10 +5,8 @@ body {
   min-width: 100vw;
   min-height: 100vh;
   background-position: bottom;
-
   /* TODO: 開発終了時に設置 */
   /* overflow: hidden; */
-
 }
 
 .wrap {
@@ -52,4 +50,15 @@ body {
   100% {
     margin-left: -550vw;
   }
+}
+
+@font-face {
+  font-family: 'DragonQuestFC';
+  src: url(../font/DragonQuestFC.ttf);
+}
+
+.win span {
+  font-family: 'DragonQuestFC';
+  font-size: 2.2em;
+  line-height: 100%;
 }
