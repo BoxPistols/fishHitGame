@@ -1,7 +1,7 @@
 console.log("hey");
 
 document.addEventListener("DOMContentLoaded", function(event) {
-  console.log("DOM fully loaded and parsed");
+  // console.log("DOM fully loaded and parsed");
 
   const body = document.querySelector(".wrap");
 

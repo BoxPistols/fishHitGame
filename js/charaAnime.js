@@ -40,12 +40,12 @@ for (let i = 1; i < 250; i++) {
       document.querySelector(".score").innerHTML = totalScore + 1;
       if (totalScore >= 10) {
         youWin();
-        console.log(totalScore);
-        console.log("Win!");
+        // console.log(totalScore);
+        // console.log("Win!");
       } else {
         youLose();
-        console.log(totalScore);
-        console.log("Lose!");
+        // console.log(totalScore);
+        // console.log("Lose!");
       }
     };
 
