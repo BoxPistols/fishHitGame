@@ -5,8 +5,10 @@ body {
   min-width: 100vw;
   min-height: 100vh;
   background-position: bottom;
+
   /* TODO: 開発終了時に設置 */
   /* overflow: hidden; */
+
 }
 
 .wrap {

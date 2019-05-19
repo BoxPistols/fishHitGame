@@ -1,68 +1,11 @@
 console.log("hey");
 
-$(function() {
-  const body = document.body;
-  // マウスストーカーの作成と追従
-  const stalker = document.createElement("div");
-  stalker.id = "stalker";
-  body.appendChild(stalker);
-  body.addEventListener(
-    "mousemove",
-    function(e) {
-      stalker.style.left = e.clientX + "px";
-      stalker.style.top = e.clientY + "px";
-    },
-    false
-  );
+document.addEventListener("DOMContentLoaded", function(event) {
+  console.log("DOM fully loaded and parsed");
 
-  // // Score
-  // const totalScore = () => {
-  //   const score = document.querySelector(".score").innerHTML;
-  //   const totalScore = parseInt(score);
-  //   document.querySelector(".score").innerHTML = totalScore + 100;
-  //   if (totalScore >= 500 - 100) {
-  //     youWin();
-  //   }
-  // };
-  //
-  // const youWin = () => {
-  //   document.querySelector(".over").innerHTML = "You Win!";
-  //   $(".bossArea").addClass("youWin");
-  // };
+  const body = document.querySelector(".wrap");
 
-
-  // ターゲットのオブジェクトの作成
-  // $(".box").one("mouseenter", function(e) {
-  //   const item = document.createElement("div");
-  //   item.classList.add("item");
-  //   body.appendChild(item);
-  //   item.style.background = "crimson";
-  //   totalScore();
-  //   return;
-  // });
-
-  // ヒットしたらついてくるオブジェクトを生成、位置は目分量
-  // body.addEventListener(
-  //   "mousemove",
-  //   function(e) {
-  //     const item = document.querySelector(".item");
-  //     item.style.left = -20 + e.clientX + "px";
-  //     item.style.top = 60 + e.clientY + "px";
-  //   },
-  //   false
-  // );
-
-  //要素取得
-  //
-  // //要素取得
-  // for(var i=0;i<obj.length;i++){
-  //   var a = obj[i].innerText;
-  //   console.log(a);
-  // }
-
-
-  body.addEventListener(
-    "mousemove",
+  body.addEventListener("mousemove",
     function(e) {
       const item = document.querySelector(".tako");
       item.style.position = "fixed";
@@ -85,9 +28,7 @@ $(function() {
     false
   );
 
-
   //////ADD
-
   body.addEventListener(
     "mousemove",
     function(e) {
@@ -112,7 +53,6 @@ $(function() {
     false
   );
 
-
   body.addEventListener(
     "mousemove",
     function(e) {
@@ -136,6 +76,7 @@ $(function() {
     },
     false
   );
+
   body.addEventListener(
     "mousemove",
     function(e) {
@@ -147,6 +88,7 @@ $(function() {
     },
     false
   );
+
   body.addEventListener(
     "mousemove",
     function(e) {
@@ -192,11 +134,5 @@ $(function() {
     false
   );
 
-  //   const score = document.querySelector(".score").innerHTML;
-  //   const totalScore = parseInt(score);
-  //   console.log(totalScore);
 
-  //   if(totalScore > 400){
-  //      youWin();
-  //    };
 });
