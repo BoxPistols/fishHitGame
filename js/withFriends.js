@@ -105,8 +105,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
     function(e) {
       const item7 = document.querySelector(".tako-y");
       item7.style.position = "fixed";
-      item7.style.left = 30 + e.clientX + "px";
-      item7.style.top = -10 + e.clientY + "px";
+      item7.style.left = -30 + e.clientX + "px";
+      item7.style.top = 40 + e.clientY + "px";
       item7.classList.add("getFriend");
     },
     false
@@ -116,8 +116,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
     function(e) {
       const item8 = document.querySelector(".napo");
       item8.style.position = "fixed";
-      item8.style.left = 20 + e.clientX + "px";
-      item8.style.top = -10 + e.clientY + "px";
+      item8.style.left = 40 + e.clientX + "px";
+      item8.style.top = -0 + e.clientY + "px";
       item8.classList.add("getFriend");
     },
     false
@@ -127,8 +127,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
     function(e) {
       const item9 = document.querySelector(".manboo");
       item9.style.position = "fixed";
-      item9.style.left = 0 + e.clientX + "px";
-      item9.style.top = -10 + e.clientY + "px";
+      item9.style.left = 30 + e.clientX + "px";
+      item9.style.top = -20 + e.clientY + "px";
       item9.classList.add("getFriend");
     },
     false

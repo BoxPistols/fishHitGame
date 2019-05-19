@@ -33,7 +33,7 @@ for (let i = 1; i < 250; i++) {
     /* -------------------------------------
       スコア設定
      --------------------------------------*/
-
+    // TODO： ポイント相談
     const totalScore = () => {
       const score = document.querySelector(".score").innerHTML;
       const totalScore = parseInt(score);
@@ -42,11 +42,10 @@ for (let i = 1; i < 250; i++) {
         youWin();
         // console.log(totalScore);
         // console.log("Win!");
-      } else {
+      } else{
         youLose();
-        // console.log(totalScore);
-        // console.log("Lose!");
       }
+      console.log(totalScore);
     };
 
     const youWin = () => {
