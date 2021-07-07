@@ -1,0 +1,1334 @@
+/* -------------------------------------
+  キャラごとに追加していく箇所 あさダッチ
+ --------------------------------------*/
+/* 下段　海底　ワカメ */
+.box:nth-child(201),
+.box:nth-child(210),
+.box:nth-child(219),
+.box:nth-child(232),
+.box:nth-child(249) {
+  /* 文字サイズはゼロに */
+  font-size: 0;
+  background: url(../img_y/wakame.png);
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100px;
+  height: 100px;
+
+  animation-name: yurayura;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-iteration-count:infinite;
+}
+.box.wakame {
+  background: url(../img_y/wakame.png));
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 120px;
+  height: 120px;
+  /* アニメーション keyframesの稼働命令 */
+  animation-name: yurayura;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-iteration-count:infinite;
+}
+
+/* 下段　海底　サンゴ */
+.box:nth-child(202),
+.box:nth-child(212),
+.box:nth-child(223),
+.box:nth-child(236) {
+  /* 文字サイズはゼロに */
+  font-size: 0;
+  background: url(../img_y/sango.png);
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 120px;
+  height: 120px;
+}
+
+.box.sango {
+  background: url(../img_y/sango.png));
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 120px;
+  height: 120px;
+  /* アニメーション keyframesの稼働命令 */
+  animation-name: janpu;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-iteration-count:1;
+}
+
+/* 下段　海底　貝 */
+.box:nth-child(204),
+.box:nth-child(214),
+.box:nth-child(225),
+.box:nth-child(238){
+  /* 文字サイズはゼロに */
+  font-size: 0;
+  background: url(../img_y/shell.png);
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 120px;
+  height: 120px;
+}
+
+.box.shell {
+  ・background: url(../img_y/shell.png);
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 120px;
+  height: 120px;
+  /* アニメーション keyframesの稼働命令 */
+  animation-name: zoomOutRight;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+/* 下段　海底　ヒトデ */
+.box:nth-child(208),
+.box:nth-child(217),
+.box:nth-child(228),
+.box:nth-child(246),
+.box:nth-child(250) {
+  /* 文字サイズはゼロに */
+  font-size: 0;
+  background: url(../img_y/hitode.png);
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 120px;
+  height: 120px;
+}
+
+.box.hitode {
+  background: url(../img_y/hitode.png);
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 120px;
+  height: 120px;
+  /* アニメーション keyframesの稼働命令 */
+  animation-name: rotateOut;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+/* 下から二番目 ヤドカリ */
+.box:nth-child(203),
+.box:nth-child(172),
+.box:nth-child(192) {
+  /* 文字サイズはゼロに */
+  font-size: 0;
+  background: url(../img_y/yadokari.png);
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 120px;
+  height: 120px;
+
+  animation-name: aruku;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+.box.yadokari {
+  background: url(../img_y/yadokari.png);
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 120px;
+  height: 120px;
+  /* アニメーション keyframesの稼働命令 */
+  animation-name: slideOutUp;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-iteration-count:infinite;
+}
+/* 下から二番目 ウミウシしろ */
+.box:nth-child(154),
+.box:nth-child(176),
+.box:nth-child(198) {
+  /* 文字サイズはゼロに */
+  font-size: 0;
+  background: url(../img_y/umiusi_white.png);
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 120px;
+  height: 120px;
+
+  animation-name: aruku;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+.box.umiusi_w {
+  background: url(../img_y/umiusi_white.png);
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 120px;
+  height: 120px;
+  /* アニメーション keyframesの稼働命令 */
+  animation-name: flipInY;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-iteration-count:3;
+}
+
+/* 下から二番目 Yumaかに */
+.box:nth-child(156),
+.box:nth-child(179) {
+  font-size: 0;
+  background: url(../img_y/kani.png);
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 120px;
+  height: 120px;
+
+  animation-name: flip;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-timing-function: ease-in;
+  animation-iteration-count:infinite;
+}
+.box.kaniy {
+  background: url(../img_y/kani.png);
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 120px;
+  height: 120px;
+  /* アニメーション keyframesの稼働命令 */
+  animation-name: fadeOutLeftBig;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-iteration-count:1;
+}
+
+/* 下から二番目 えび */
+.box:nth-child(158),
+.box:nth-child(183),
+.box:nth-child(194) {
+  font-size: 0;
+  background: url(../img_y/ebi.png);
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 120px;
+  height: 120px;
+
+  animation-name: swing;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-timing-function: ease-in;
+  animation-iteration-count:infinite;
+}
+.box.ebi {
+  background: url(../img_y/ebi.png);
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 120px;
+  height: 120px;
+  /* アニメーション keyframesの稼働命令 */
+  animation-name: fadeOutRightBig;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-iteration-count:1;
+}
+
+/* 下から二番目 ウミウシ　紫 */
+.box:nth-child(165),
+.box:nth-child(188){
+  font-size: 0;
+  background: url(../img_y/umiusi_perple.png);
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 120px;
+  height: 120px;
+
+  animation-name: swing;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-timing-function: ease-in;
+  animation-iteration-count:infinite;
+}
+.box.umiusi_p {
+  background: url(../img_y/umiusi_perple.png);
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 120px;
+  height: 120px;
+  /* アニメーション keyframesの稼働命令 */
+  animation-name: fadeOutDown;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-iteration-count:1;
+}
+/* 下から二番目 かに*/
+.box:nth-child(170),
+.box:nth-child(190),
+.box:nth-child(200){
+  font-size: 0;
+  background: url(../img_k/Kani.png);
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 120px;
+  height: 120px;
+
+  animation-name: flip;
+  animation-duration: 3s;
+  animation-fill-mode: both;
+  animation-timing-function: ease-in;
+  animation-iteration-count:infinite;
+}
+.box.kanik {
+  background: url(../img_k/Kani.png);
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 120px;
+  height: 120px;
+  /* アニメーション keyframesの稼働命令 */
+  animation-name: fadeOutRightBig;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-iteration-count:infinite;
+}
+
+/* 真ん中三番目 ふぐ*/
+.box:nth-child(105),
+.box:nth-child(130) {
+  font-size: 0;
+  background: url(../img_k/Fugu.png);
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 120px;
+  height: 120px;
+
+  animation-name: slideInUp;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-iteration-count:infinite;
+}
+.box.fugu {
+  background: url(../img_k/Fugu.png);
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 120px;
+  height: 120px;
+  /* アニメーション keyframesの稼働命令 */
+  animation-name: zoomInUp;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-iteration-count:infinite;
+}
+/* 真ん中三番目 くらげ*/
+.box:nth-child(109),
+.box:nth-child(135) {
+  font-size: 0;
+  background: url(../img_k/Kurage.png);
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 120px;
+  height: 120px;
+
+  animation-name: up;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+.box.kuragek {
+  background: url(../img_k/Kurage.png);
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 120px;
+  height: 120px;
+  /* アニメーション keyframesの稼働命令 */
+  animation-name: purupuru;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-iteration-count:infinite;
+}
+/* 真ん中三番目 たこ*/
+.box:nth-child(111),
+.box:nth-child(139) {
+  font-size: 0;
+  background: url(../img_k/Tako.png);
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 120px;
+  height: 120px;
+
+  animation-name: aruku;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+.box.takok {
+  background: url(../img_k/Tako.png);
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 120px;
+  height: 120px;
+  /* アニメーション keyframesの稼働命令 */
+  animation-name: bounceOutUp;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-iteration-count:infinite;
+}
+/* 真ん中三番目 nakama_d*/
+.box:nth-child(115),
+.box:nth-child(141) {
+  font-size: 0;
+  background: url(../img_k/NakamaDorobo.png);
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 120px;
+  height: 120px;
+
+  animation-name: pyonpyon;
+  animation-duration: 0.4s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+.box.nakama_d {
+  background: url(../img_k/NakamaDorobo.png);
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 120px;
+  height: 120px;
+  /* アニメーション keyframesの稼働命令 */
+  animation-name: bounceOutUp;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-iteration-count:infinite;
+}
+/* 真ん中三番目 nakama_d*/
+.box:nth-child(119),
+.box:nth-child(142) {
+  font-size: 0;
+  background: url(../img_k/NakamaMegane.png);
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 120px;
+  height: 120px;
+
+  animation-name: pyonpyon;
+  animation-duration: 0.4s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+.box.nakama_m {
+  background: url(../img_k/NakamaMegane.png);
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 120px;
+  height: 120px;
+  /* アニメーション keyframesの稼働命令 */
+  animation-name: bounceOutUp;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-iteration-count:infinite;
+}
+/* 真ん中三番目 nakama_n*/
+.box:nth-child(122),
+.box:nth-child(146) {
+  font-size: 0;
+  background: url(../img_k/NakamaNippon.png);
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 120px;
+  height: 120px;
+
+  animation-name: marquee;
+  animation-duration: 3s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.box.nakama_n {
+  background: url(../img_k/NakamaNippon.png);
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 120px;
+  height: 120px;
+  /* アニメーション keyframesの稼働命令 */
+  animation-name: rotateOutUpLeft;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-iteration-count:infinite;
+}
+
+/* 真ん中三番目 kuragey*/
+.box:nth-child(128) {
+  font-size: 0;
+  background: url(../img_y/kurage.png);
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 120px;
+  height: 120px;
+
+  animation-name: up;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+.box.kuragey {
+  background: url(../img_y/kurage.png);
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 120px;
+  height: 120px;
+  /* アニメーション keyframesの稼働命令 */
+  animation-name: purupuru;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-iteration-count:infinite;
+}
+
+/* 真ん中三番目 nakama_tsup*/
+.box:nth-child(54),
+.box:nth-child(71),
+.box:nth-child(90){
+  font-size: 0;
+  background: url(../img_k/NakamaTsuppari.png);
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 120px;
+  height: 120px;
+
+  animation-name: marquee;
+  animation-duration: 2s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+.box.nakama_tsup {
+  background: url(../img_k/NakamaTsuppari.png);
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 120px;
+  height: 120px;
+  /* アニメーション keyframesの稼働命令 */
+  animation-name: rotateOut;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+  animation-iteration-count:infinite;
+}
+/* 真ん中三番目 nakama_tono*/
+.box:nth-child(52),
+.box:nth-child(68),
+.box:nth-child(86){
+  font-size: 0;
+  background: url(../img_k/NakamaTono.png);
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 120px;
+  height: 120px;
+
+  animation-name: lightSpeedIn;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-iteration-count:infinite;
+}
+.box.nakama_tono {
+  background: url(../img_k/NakamaTono.png);
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 120px;
+  height: 120px;
+  /* アニメーション keyframesの稼働命令 */
+  animation-name: janpu;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+  animation-iteration-count:infinite;
+}
+
+/* 真ん中三番目 kinme*/
+.box:nth-child(57),
+.box:nth-child(73),
+.box:nth-child(93){
+  font-size: 0;
+  background: url(../img_y/kinnmedai.png);
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 120px;
+  height: 120px;
+
+  animation-name: marquee;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+
+}
+.box.kinme {
+  background: url(../img_y/kinnmedai.png);
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 120px;
+  height: 120px;
+  /* アニメーション keyframesの稼働命令 */
+  animation-name: janpu;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+  animation-iteration-count:infinite;
+}
+
+/* 真ん中三番目 nakama2*/
+.box:nth-child(62),
+.box:nth-child(75),
+.box:nth-child(99){
+  font-size: 0;
+  background: url(../img_k/Nakama2.png);
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 120px;
+  height: 120px;
+
+  animation-name: marquee;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+
+}
+.box.nakama2 {
+  background: url(../img_k/Nakama2.png);
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 120px;
+  height: 120px;
+  /* アニメーション keyframesの稼働命令 */
+  animation-name: flip;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+  animation-iteration-count:infinite;
+}
+/* 真ん中三番目 nakama3*/
+.box:nth-child(64),
+.box:nth-child(77){
+  font-size: 0;
+  background: url(../img_k/Nakama3.png);
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 120px;
+  height: 120px;
+
+  animation-name: swing;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+
+}
+.box.nakama3 {
+  background: url(../img_k/Nakama3.png);
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 120px;
+  height: 120px;
+  /* アニメーション keyframesの稼働命令 */
+  animation-name: flash;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+  animation-iteration-count:infinite;
+}
+/* 真ん中三番目 takoy*/
+.box:nth-child(67),
+.box:nth-child(82){
+  font-size: 0;
+  background: url(../img_y/tako.png);
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 120px;
+  height: 120px;
+
+  animation-name: bounceInUp;
+  animation-duration: 3s;
+  animation-fill-mode: both;
+  animation-iteration-count:infinite;
+}
+.box.takoy {
+  background: url(../img_y/tako.png);
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 120px;
+  height: 120px;
+  /* アニメーション keyframesの稼働命令 */
+  animation-name: zoomOutUp;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+}
+
+/* 一番上 kurage2*/
+.box:nth-child(3),
+.box:nth-child(25),
+.box:nth-child(37){
+  font-size: 0;
+  background: url(../img_k/Kurage2.png);
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 120px;
+  height: 120px;
+
+  animation-name: up;
+  animation-duration: 1.2s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+.box.kurage2 {
+  background: url(../img_k/Kurage2.png);
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 120px;
+  height: 120px;
+  /* アニメーション keyframesの稼働命令 */
+  animation-name: purupuru;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+}
+
+/* 一番上 bigfish*/
+.box:nth-child(5),
+.box:nth-child(34),
+.box:nth-child(45){
+  font-size: 0;
+  background: url(../img_y/bg-fish.png);
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 120px;
+  height: 120px;
+
+  animation-name: marquee;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+
+}
+.box.bigfish {
+  background: url(../img_y/bg-fish.png);
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 120px;
+  height: 120px;
+  /* アニメーション keyframesの稼働命令 */
+  animation-name: pyonpyon;
+  animation-duration: 2s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+/* 一番上 nakama1*/
+.box:nth-child(9),
+.box:nth-child(48){
+  font-size: 0;
+  background: url(../img_k/Nakama.png);
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 120px;
+  height: 120px;
+
+  animation-name: marquee;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+
+}
+.box.nakama1 {
+  background: url(../img_k/Nakama.png);
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 120px;
+  height: 120px;
+  /* アニメーション keyframesの稼働命令 */
+  animation-name: rotateOut;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+/* 一番上 nakama_ukiwa*/
+.box:nth-child(12),
+.box:nth-child(25),
+.box:nth-child(50){
+  font-size: 0;
+  background: url(../img_k/NakamaUkiwa.png);
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 120px;
+  height: 120px;
+
+  animation-name: swing;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+
+}
+.box.nakama_ukiwa {
+  background: url(../img_k/NakamaUkiwa.png);
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 120px;
+  height: 120px;
+  /* アニメーション keyframesの稼働命令 */
+  animation-name: rotateOutDownLeft;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-iteration-count:infinite;
+}
+
+/* 一番上 ankou*/
+.box:nth-child(16),
+.box:nth-child(41){
+  font-size: 0;
+  background: url(../img_y/ankou.png);
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 120px;
+  height: 120px;
+
+  animation-name: flash;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+
+}
+.box.ankou {
+  background: url(../img_k/ankou.png);
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 120px;
+  height: 120px;
+  /* アニメーション keyframesの稼働命令 */
+  animation-name: fadeOutRightBig;
+  animation-duration: 3s;
+  animation-fill-mode: both;
+  animation-iteration-count:infinite;
+}
+
+/* 一番上 manboo*/
+.box:nth-child(9),
+.box:nth-child(30){
+  font-size: 0;
+  background: url(../img_y/manboo.png);
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 120px;
+  height: 120px;
+
+  animation-name: slideOutUp;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+
+}
+.box.manboo {
+  background: url(../img_y/manboo.png);
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 120px;
+  height: 120px;
+  /* アニメーション keyframesの稼働命令 */
+  animation-name: flip;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-iteration-count:infinite;
+}
+/* 一番上 manboo*/
+.box:nth-child(9),
+.box:nth-child(30){
+  font-size: 0;
+  background: url(../img_y/manboo.png);
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 120px;
+  height: 120px;
+
+  animation-name: slideOutUp;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+
+}
+.box.manboo {
+  background: url(../img_y/manboo.png);
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 120px;
+  height: 120px;
+  /* アニメーション keyframesの稼働命令 */
+  animation-name: flip;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-iteration-count:infinite;
+}
+/* 一番上 manboo*/
+.box:nth-child(9),
+.box:nth-child(30){
+  font-size: 0;
+  background: url(../img_y/manboo.png);
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 120px;
+  height: 120px;
+
+  animation-name: slideOutUp;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+
+}
+.box.manboo {
+  background: url(../img_y/manboo.png);
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 120px;
+  height: 120px;
+  /* アニメーション keyframesの稼働命令 */
+  animation-name: flip;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-iteration-count:infinite;
+}
+/* 一番上 bigika*/
+.box:nth-child(59){
+  font-size: 0;
+  background: url(../img_y/bg-ika.png);
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 120px;
+  height: 120px;
+
+  animation-name: aruku;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+
+}
+.box.bigika {
+  background: url(../img_y/bg-ika.png);
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 120px;
+  height: 120px;
+  /* アニメーション keyframesの稼働命令 */
+  animation-name: mawaru;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-iteration-count:infinite;
+}
+
+/* アニメーション内容、アニメの種類分だけ作成していく　*/
+@keyframes yurayura {
+     0% { transform: translateX(0%); }
+     15% { transform: translateX(-25%) rotate(-5deg); }
+     30% { transform: translateX(20%) rotate(3deg); }
+     45% { transform: translateX(-15%) rotate(-3deg); }
+     60% { transform: translateX(10%) rotate(2deg); }
+     75% { transform: translateX(-5%) rotate(-1deg); }
+     100% { transform: translateX(0%); }
+}
+
+@keyframes janpu {
+    0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+    40% {transform: translateY(-30px);}
+    60% {transform: translateY(-15px);}
+}
+
+@keyframes zoomOutRight {
+    40% {
+        opacity: 1;
+        transform: scale3d(.475, .475, .475) translate3d(-42px, 0, 0);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(.1) translate3d(2000px, 0, 0);
+        transform-origin: right center;
+    }
+}
+
+@keyframes rotateOut {
+    0% {
+        transform-origin: center center;
+        transform: rotate(0);
+        opacity: 1;
+    }
+    100% {
+        transform-origin: center center;
+        transform: rotate(200deg);
+        opacity: 0;
+    }
+}
+
+@keyframes slideOutUp {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+    100% {
+        visibility: hidden;
+        transform: translate3d(0, -100%, 0);
+    }
+}
+
+@keyframes pyonpyon {
+      0% {
+        transform: translateY(0px);
+      }
+      50% {
+        transform: translateY(-100px);
+      }
+      100% {
+        transform: translateX(100px);
+      }
+}
+@keyframes aruku {
+    from    { transform: translate(0%);
+    }
+    100%,to { transform: translate(-100%);
+    }
+}
+
+@keyframes mawaru {
+     0% {
+        transform: scale(.3);
+     }
+     0% {
+        transform: scale(.6) rotate(-45deg);
+     }
+     100% {
+        transform: scale(1) rotate(180deg);
+    }
+}
+@keyframes up {
+    0%   { transform: translateY(100%);
+    }
+    100% { transform: translateY(0%);
+    }
+}
+@keyframes flash {
+    0%, 50%, 100% {opacity: 1;}
+    25%, 75% {opacity: 0;}
+}
+
+@keyframes flipInY {
+    0% {
+        transform: perspective(400px) rotateY(90deg);
+        opacity: 0;
+    }
+    40% {
+        transform: perspective(400px) rotateY(-10deg);
+    }
+    70% {
+        transform: perspective(400px) rotateY(10deg);
+    }
+    100% {
+        transform: perspective(400px) rotateY(0deg);
+        opacity: 1;
+    }
+}
+@keyframes flip {
+    0% {
+        transform: perspective(400px) rotateY(0);
+        animation-timing-function: ease-out;
+    }
+    40% {
+        transform: perspective(400px) translateZ(150px) rotateY(170deg);
+        animation-timing-function: ease-out;
+    }
+    80% {
+        transform: perspective(400px) rotateY(360deg) scale(.95);
+        animation-timing-function: ease-in;
+    }
+    100% {
+        transform: perspective(400px) scale(1);
+        animation-timing-function: ease-in;
+    }
+}
+@keyframes fadeOutLeftBig {
+    0% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(-2000px);
+    }
+}
+
+@keyframes swing {
+    20% { transform: rotate(15deg); }
+    40% { transform: rotate(-10deg); }
+    60% { transform: rotate(5deg); }
+    80% { transform: rotate(-5deg); }
+    100% { transform: rotate(0deg); }
+}
+
+@keyframes fadeOutRightBig {
+    0% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(2000px);
+    }
+}
+
+@keyframes fadeOutDown {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+}
+
+@keyframes fadeOutRightBig {
+    0% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(2000px);
+    }
+}
+
+@keyframes rotateIn {
+    0% {
+        transform-origin: center center;
+        transform: rotate(-200deg);
+        opacity: 0;
+    }
+    100% {
+        transform-origin: center center;
+        transform: rotate(0);
+        opacity: 1;
+    }
+}
+@keyframes slideInUp {
+    0% {
+        visibility: visible;
+        transform: translate3d(0, 100%, 0);
+    }
+    100% {
+        transform: translate3d(0, 0, 0);
+    }
+}
+@keyframes zoomInUp {
+    0% {
+        opacity: 0;
+        transform: scale3d(.1, .1, .1) translate3d(0, 1000px, 0);
+        animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+    }
+    60% {
+        opacity: 1;
+        transform: scale3d(.475, .475, .475) translate3d(0, -60px, 0);
+        animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+    }
+}
+@keyframes purupuru {
+    0% { transform: skewX(9deg); }
+    10% { transform: skewX(-8deg); }
+    20% { transform: skewX(7deg); }
+    30% { transform: skewX(-6deg); }
+    40% { transform: skewX(5deg); }
+    50% { transform: skewX(-4deg); }
+    60% { transform: skewX(3deg); }
+    70% { transform: skewX(-2deg); }
+    80% { transform: skewX(1deg); }
+    90% { transform: skewX(0deg); }
+    100% { transform: skewX(0deg); }
+}
+@keyframes bounceOutUp {
+    0% {
+        transform: translateY(0);
+    }
+    20% {
+        opacity: 1;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-2000px);
+    }
+}
+
+@keyframes marquee {
+    from    { transform: translate(0%);
+    }
+    100%,to { transform: translate(-100%);
+    }
+}
+
+@keyframes rotateOutUpLeft {
+    0% {
+        transform-origin: left bottom;
+        transform: rotate(0);
+        opacity: 1;
+    }
+    100% {
+        transform-origin: left bottom;
+        transform: rotate(-90deg);
+        opacity: 0;
+    }
+}
+@keyframes zoomOutDown {
+    40% {
+        opacity: 1;
+        transform: scale3d(.475, .475, .475) translate3d(0, -60px, 0);
+        animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+    }
+    100% {
+        opacity: 0;
+        transform: scale3d(.1, .1, .1) translate3d(0, 2000px, 0);
+        transform-origin: center bottom;
+        animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+    }
+}
+
+@keyframes lightSpeedIn {
+    0% { transform: translateX(100%) skewX(-30deg); opacity: 0; }
+    60% { transform: translateX(-20%) skewX(30deg); opacity: 1; }
+    80% { transform: translateX(0%) skewX(-15deg); opacity: 1; }
+    100% { transform: translateX(0%) skewX(0deg); opacity: 1; }
+}
+
+@keyframes rotateOut {
+    0% {
+        transform-origin: center center;
+        transform: rotate(0);
+        opacity: 1;
+    }
+    100% {
+        transform-origin: center center;
+        transform: rotate(200deg);
+        opacity: 0;
+    }
+}
+@keyframes flipOutX {
+    0% {
+        transform: perspective(400px) rotateX(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: perspective(400px) rotateX(90deg);
+        opacity: 0;
+    }
+}
+@keyframes zoomOutUp {
+    40% {
+        opacity: 1;
+        transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
+        animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+    }
+    100% {
+        opacity: 0;
+        transform: scale3d(.1, .1, .1) translate3d(0, -2000px, 0);
+        transform-origin: center bottom;
+        animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+    }
+}
+@keyframes bounceInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(2000px);
+    }
+    60% {
+        opacity: 1;
+        transform: translateY(-30px);
+    }
+    80% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+@keyframes rotateOutDownLeft {
+    0% {
+        transform-origin: left bottom;
+        transform: rotate(0);
+        opacity: 1;
+    }
+    100% {
+        transform-origin: left bottom;
+        transform: rotate(90deg);
+        opacity: 0;
+    }
+}

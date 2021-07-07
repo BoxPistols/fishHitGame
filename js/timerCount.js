@@ -1,13 +1,14 @@
 /// Timer
-var time = 35;
+// 37
+var time = 37;
 
-$(function () {
+$(function() {
   var sec = time;
 
   var timer;
 
   // スタート
-  $(function () {
+  $(function() {
     // 00:00:00から開始
     sec = time;
     $('#clock').html('Start!');
@@ -31,7 +32,8 @@ $(function () {
       sec -= 1;
     } else {
       console.log('stop!!');
-      over.innerHTML = '<span>Time over</span>';
+      // over.innerHTML = '<span>Time over</span>';
+      // over.innerHTML = '<span>Time over</span>　<br> <input type="button" value="もう１回あそぶ！" onclick="window.location.reload();" />'
       clearTimeout(timer);
 
       over
@@ -41,7 +43,32 @@ $(function () {
         .classList
         .add('active');
 
-      $(wrap).fadeOut();
+      // $(wrap).fadeOut();
+      const notFriends = document.querySelectorAll('.box:not(.getFriend)');
+      $(notFriends).fadeOut(3000);
+
+      // $('bossArea').addClass('end');
+
+      // 結果
+      $('.win').addClass('show');
+
+      // //  仕込み　NG
+      // let beforeScore = 0;
+      // document.querySelector(".score").innerHTML = beforeScore;
+      // // console.log(beforeScore);
+      //
+      // if (beforeScore = "0" ) {
+      //   console.log("loseZero");
+      //   // alert("0");
+      //   document.querySelector(".win").innerHTML = "え？わたしの年収低すぎ！？";
+      //   $(".win").addClass("lose").removeClass("active");
+      //   $('bossArea').addClass('boss-is-Win');
+      //
+      // } else {
+      //   console.log("Other");
+      //   alert("other");
+      // }
+      //
 
       return;
     }
